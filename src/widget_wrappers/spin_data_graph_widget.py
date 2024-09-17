@@ -6,8 +6,8 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from matplotlib.figure import Figure
 
 from src.util.spinner_model import OvalSpinner, NoSpinner
-from libs.widget_wrappers.src.ui_events import TKEvent
-from libs.widget_wrappers.src.widget_wrapper import EventsMixin, WidgetWrapper
+from libs.widget_wrappers.src.widget_wrappers.ui_events import TKEvent
+from libs.widget_wrappers.src.widget_wrappers.widget_wrapper import EventsMixin, WidgetWrapper
 from tests.utils.commands import SpinData
 
 

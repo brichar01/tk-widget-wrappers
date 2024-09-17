@@ -2,9 +2,9 @@ from functools import reduce
 from tkinter import ttk
 from typing import Tuple, Dict, Any
 
-from libs.widget_wrappers.src.hideable_widget import HideableWidget, VisibilityStates
-from libs.widget_wrappers.src.ui_events import TKEvent
-from libs.widget_wrappers.src.widget_wrapper import WidgetWrapper, EventsMixin
+from libs.widget_wrappers.src.widget_wrappers.hideable_widget import HideableWidget, VisibilityStates
+from libs.widget_wrappers.src.widget_wrappers.ui_events import TKEvent
+from libs.widget_wrappers.src.widget_wrappers.widget_wrapper import WidgetWrapper, EventsMixin
 
 
 def flatten_dict(list_of_dict: list[dict]):

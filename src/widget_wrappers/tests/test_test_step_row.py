@@ -4,8 +4,8 @@ from tkinter import Tk, ttk
 import asynctkinter as aiotk
 from async_tkinter_loop import async_mainloop, async_handler
 
-from libs.widget_wrappers.src.test_step_row import TestStepRow
-from libs.widget_wrappers.src.widget_wrapper import WidgetWrapper
+from libs.widget_wrappers.src.widget_wrappers.test_step_row import TestStepRow
+from libs.widget_wrappers.src.widget_wrappers.widget_wrapper import WidgetWrapper
 from tests.tests_base import TestStateVar, TestActive, TestResult
 
 

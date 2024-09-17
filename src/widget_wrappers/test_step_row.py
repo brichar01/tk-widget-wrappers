@@ -1,8 +1,8 @@
 import asyncio
 from tkinter import ttk
 
-from libs.widget_wrappers.src.ui_events import TKEvent
-from libs.widget_wrappers.src.widget_wrapper import WidgetWrapper, EventsMixin
+from libs.widget_wrappers.src.widget_wrappers.ui_events import TKEvent
+from libs.widget_wrappers.src.widget_wrappers.widget_wrapper import WidgetWrapper, EventsMixin
 from tests.tests_base import TestState, TestResult
 
 

@@ -4,8 +4,8 @@ from typing import Tuple, Dict, Any, Callable
 
 from async_tkinter_loop import async_handler
 
-from libs.widget_wrappers.src.ui_events import TKEvent
-from libs.widget_wrappers.src.widget_wrapper import EventsMixin, WidgetWrapper
+from libs.widget_wrappers.src.widget_wrappers.ui_events import TKEvent
+from libs.widget_wrappers.src.widget_wrappers.widget_wrapper import EventsMixin, WidgetWrapper
 
 
 class ButtonStates:

@@ -1,15 +1,15 @@
 [tool.poetry]
-name = "tk-widget-wrapper"
+name = "widget_wrappers"
 version = "1.0.0"
 description = "AQ1 Tkinter Builder functions"
 authors = ["Ben Richards <benri@aq1systems.com>"]
 readme = "README.md"
+packages = [{ include = "widget_wrappers", from = "src" }]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-asynctkinter = "^0.2.0"
-async-tkinter-loop = "^0.8.1"
-
+asynctkinter = "^0.4.1"
+async-tkinter-loop = "^0.9.3"
 
 [build-system]
 requires = ["poetry-core"]

@@ -1,9 +1,6 @@
 from tkinter import ttk
 from typing import Tuple, Dict, Any
 
-from libs.widget_wrappers.src.ui_events import TKEvent
-from libs.widget_wrappers.src.widget_wrapper import WidgetWrapper, EventsMixin
-
 
 class VisibilityStates:
     VISIBLE = "visible"

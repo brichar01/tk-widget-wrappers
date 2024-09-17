@@ -1,12 +1,12 @@
 import asyncio
-from tkinter import ttk, StringVar
+from tkinter import ttk
 from typing import Tuple, Any, Dict, Callable, Coroutine, List
 
 from async_tkinter_loop import async_handler
 
-from libs.widget_wrappers.src.responsive_button import ResponsiveButtonWidget, ButtonStates
-from libs.widget_wrappers.src.ui_events import TKEvent
-from libs.widget_wrappers.src.widget_wrapper import WidgetWrapper, EventsMixin
+from libs.widget_wrappers.src.widget_wrappers.responsive_button import ResponsiveButtonWidget, ButtonStates
+from libs.widget_wrappers.src.widget_wrappers.ui_events import TKEvent
+from libs.widget_wrappers.src.widget_wrappers.widget_wrapper import WidgetWrapper, EventsMixin
 from tests.tests_base import TestResult, TestState
 
 

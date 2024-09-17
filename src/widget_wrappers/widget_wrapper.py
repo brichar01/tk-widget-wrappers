@@ -1,9 +1,9 @@
 from typing import List, Tuple, Any, Dict, Optional, TypeVar
-from tkinter import ttk, Tk
+from tkinter import ttk
 
 from async_tkinter_loop import async_handler
 
-from libs.widget_wrappers.src.ui_events import TKEvent
+from libs.widget_wrappers.src.widget_wrappers.ui_events import TKEvent
 
 
 T = TypeVar("T")

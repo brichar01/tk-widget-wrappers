@@ -1,10 +1,10 @@
 from tkinter import ttk, Variable
 from typing import List, Tuple, Any, Dict, Callable
 
-from libs.widget_wrappers.src.run_test_widget import RunTestWidget
-from libs.widget_wrappers.src.test_step_row import TestStepRow
-from libs.widget_wrappers.src.ui_events import TKEvent
-from libs.widget_wrappers.src.widget_wrapper import WidgetWrapper
+from libs.widget_wrappers.src.widget_wrappers.run_test_widget import RunTestWidget
+from libs.widget_wrappers.src.widget_wrappers.test_step_row import TestStepRow
+from libs.widget_wrappers.src.widget_wrappers.ui_events import TKEvent
+from libs.widget_wrappers.src.widget_wrappers.widget_wrapper import WidgetWrapper
 from tests.tests_base import TestActive, TestState
 
 
