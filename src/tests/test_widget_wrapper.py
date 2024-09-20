@@ -3,7 +3,7 @@ from tkinter import Tk, ttk, StringVar
 import asynctkinter as aiotk
 from async_tkinter_loop import async_mainloop
 
-from libs.widget_wrappers.src.widget_wrappers.widget_wrapper import WidgetWrapper, EventsMixin
+from src.widget_wrapper import EventsMixin, WidgetWrapper
 
 
 def test_widget_wrapper(tkroot):

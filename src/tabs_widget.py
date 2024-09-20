@@ -2,9 +2,9 @@ from functools import reduce
 from tkinter import ttk
 from typing import Tuple, Dict, Any
 
-from libs.widget_wrappers.src.widget_wrappers.hideable_widget import HideableWidget, VisibilityStates
-from libs.widget_wrappers.src.widget_wrappers.ui_events import TKEvent
-from libs.widget_wrappers.src.widget_wrappers.widget_wrapper import WidgetWrapper, EventsMixin
+from hideable_widget import HideableWidget, VisibilityStates
+from ui_events import TKEvent
+from widget_wrapper import EventsMixin, WidgetWrapper
 
 
 def flatten_dict(list_of_dict: list[dict]):
@@ -50,6 +50,6 @@ class TabsWidget(EventsMixin, WidgetWrapper):
             else:
                 tab.set(VisibilityStates.HIDDEN)
 
-    def render(self, root, context: dict) -> None:
-        super().render(root, context)
+    def render(self, root) -> None:
+        super().render(root)
         self._update(self.active_tab.get())

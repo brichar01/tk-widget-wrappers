@@ -1,6 +1,10 @@
 from tkinter import ttk
-from typing import Tuple, Dict, Any
+from typing import Tuple, Dict, Any, TypeVar
 
+from ui_events import TKEvent
+from widget_wrapper import EventsMixin, WidgetWrapper
+
+T = TypeVar("T")
 
 class VisibilityStates:
     VISIBLE = "visible"
@@ -31,6 +35,8 @@ class HideableWidget(EventsMixin, WidgetWrapper):
             self.register_shortcuts()
             self.widget.grid(*self.grid_args[0], **self.grid_args[1])
 
-    def render(self, root: ttk.Widget, context: dict) -> None:
+    def render(self, root: ttk.Widget) -> None:
+        super().render(root)
+
+    def create_context(self, context: dict[str, TKEvent[T]]):
         context["visibility"] = self.visible
-        super().render(root, context)

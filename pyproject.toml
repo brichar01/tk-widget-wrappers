@@ -4,12 +4,13 @@ version = "1.0.0"
 description = "AQ1 Tkinter Builder functions"
 authors = ["Ben Richards <benri@aq1systems.com>"]
 readme = "README.md"
-packages = [{ include = "widget_wrappers", from = "src" }]
+packages = [{ include = ".", from = "src" }]
 
 [tool.poetry.dependencies]
 python = "^3.10"
 asynctkinter = "^0.4.1"
 async-tkinter-loop = "^0.9.3"
+matplotlib = "^3.9.2"
 
 [build-system]
 requires = ["poetry-core"]

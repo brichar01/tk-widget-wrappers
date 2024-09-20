@@ -1,9 +1,22 @@
 from tkinter import StringVar, IntVar, Variable
 from typing import TypeVar
 
-from tests.tests_base import IBaseEvent
 
 T = TypeVar("T")
+
+
+class IBaseEvent[T]:
+    def __init__(self, value: T):
+        self._value = value
+
+    def get(self) -> T:
+        return self._value
+
+    def set(self, value: T):
+        self._value = value
+
+    def __str__(self):
+        return self.get().__str__()
 
 
 class TKEvent[T](IBaseEvent[T]):

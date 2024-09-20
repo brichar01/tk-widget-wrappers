@@ -1,6 +1,9 @@
 from tkinter import ttk, Canvas
 from typing import Tuple, Dict, Any
 
+from ui_events import TKEvent
+from widget_wrapper import EventsMixin, WidgetWrapper
+
 
 class IndicatorState:
     ON = "green"
@@ -16,8 +19,8 @@ class LightIndicatorWidget(EventsMixin, WidgetWrapper):
     async def update(self, state: str):
         self.canvas.itemconfig(self.indicator, fill=state)
 
-    def render(self, root: ttk.Widget, context: dict) -> None:
-        super().render(root, context)
+    def render(self, root: ttk.Widget) -> None:
+        super().render(root)
         self.canvas = Canvas(self.widget, width=70, height=70)
         self.canvas.grid(row=0, column=0, sticky="e")
         self.indicator = self.canvas.create_oval(10, 10, 60, 60, fill="red")
